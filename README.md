@@ -75,9 +75,9 @@ plt.show()
 ## 📊 Evaluation
 The project calculates the following scores to evaluate topic models:
 
-- **Perplexity Score:** Measures how well the model predicts a sample.
-- **Coherence Score:** Evaluates topic coherence based on word similarity.
+- **Perplexity Score**: Measures how well the model predicts a sample. Lower scores indicate better generalization. Typically, scores range from -10 to -200, with a strong model achieving around -50 to -100.
 
+- **Coherence Score:** Evaluates topic interpretability by measuring the semantic similarity of high-scoring words in each topic. Scores generally range from 0.3 to 0.7, with good models scoring above 0.5.
 ```python
 print(f"Model Perplexity: {perplexity}")
 print(f"Model Coherence Score: {coherence_score}")
